@@ -9,16 +9,16 @@ const output = document.getElementById('output')
 
 function decimalToBinary(decimalNumber) {
   if (decimalNumber === 0) {
-    return '0';
+    return '0'
   }
 
-  let binary = '';
+  let binary = ''
   while (decimalNumber > 0) {
-    binary = (decimalNumber % 2) + binary;
+    binary = (decimalNumber % 2) + binary
     decimalNumber = Math.floor(decimalNumber / 2)
   }
 
-  return binary;
+  return binary
 }
 
 // convert from binary to decimal
@@ -30,7 +30,7 @@ function binaryToDecimal(binaryNumber) {
 // convert from string to decimal
 
 function stringToBinary(string) {
-  let binary = '';
+  let binary = ''
   for (let i = 0; i < string.length; i++) {
     const charCode = string.charCodeAt(i)
 
