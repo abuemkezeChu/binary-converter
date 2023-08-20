@@ -7,7 +7,7 @@ const output = document.getElementById('output')
 
 // convert from decimal to binary
 
-function decimalToBinary(decimalNumber) {
+function decimalToBinary (decimalNumber) {
   if (decimalNumber === 0) {
     return '0'
   }
@@ -23,13 +23,13 @@ function decimalToBinary(decimalNumber) {
 
 // convert from binary to decimal
 
-function binaryToDecimal(binaryNumber) {
+function binaryToDecimal (binaryNumber) {
   return parseInt(binaryNumber, 2)
 }
 
 // convert from string to decimal
 
-function stringToBinary(string) {
+function stringToBinary (string) {
   let binary = ''
   for (let i = 0; i < string.length; i++) {
     const charCode = string.charCodeAt(i)
