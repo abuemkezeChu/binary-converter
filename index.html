@@ -5,15 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/index.css">
-  <title>decimal-to-binary converter</title>
+  <title>binary-converter</title>
 </head>
 
 <body>
   <main class="container">
+    <label for="conversion-type">Choose conversion type:</label>
+    <select id="conversion-type">
+      <option value="decimal">Decimal to Binary</option>
+      <option value="binary">Binary to Decimal</option>
+      <option value="string">String to Binary</option>
+    </select>
     <input id="input" type="text/number" placeholder="enter a number">
     <button id="convert-btn">Convert</button>
-    <input id="output" type="text" placeholder="output">
+    <output id="output"></output>
   </main>
+  <script src="assets/scripts/converter.js"></script>
 </body>
 
 </html>
